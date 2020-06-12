@@ -1,5 +1,5 @@
 // Dom7
-var $ = Dom7;
+// var $ = Dom7;
 
 // Theme
 var theme = 'auto';
@@ -30,6 +30,9 @@ var app = new Framework7({
 		closeOnEscape: true,
 	},
 	sheet: {
+		closeOnEscape: true,
+	},
+	popover: {
 		closeOnEscape: true,
 	},
 	popover: {

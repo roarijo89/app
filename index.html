@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="theme-dark color-theme-deeporange" lang="en">
+<html class="color-theme-deeporange" lang="en">
 
 <head>
 	<meta charset="UTF-8">
@@ -57,24 +57,18 @@
 	}
 </script>
 -->
-<style>
-	.lol {
-		background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-	}
-</style>
 
 <body>
 	<div id="app">
 		<div class="view view-main view-init safe-areas" data-master-detail-breakpoint="800" data-url="/">
-			<div class="page page-home">
-				<div class="navbar navbar-large">
+			<div class="page page-home" id="page-color">
+				<div class="navbar navbar-large navbar-transparent">
 					<div class="navbar-bg"></div>
 					<div class="navbar-inner">
 						<div class="left">
-							<a class="link icon-only" href="./about.html">
-								<i class="f7-icons">gear</i>
+							<a class="link icon-only popup-open" href="#" data-popup=".my-popup">
+								<i class="icon f7-icons if-not-md">gear</i>
+								<i class="icon material-icons md-only">gear</i>
 							</a>
 						</div>
 						<div class="title sliding"><img width="25px" src="icon.png"></div>
@@ -115,6 +109,136 @@
 					</div>
 				</div>
 				<div class="tabs">
+					 <div style="border-top-left-radius: 20px; border-top-right-radius: 20px; margin-top:20px;" class="popup my-popup">
+						<div class="view" id="popup-color">
+							<div class="page">
+								<div class="navbar">
+									<div class="navbar-bg"></div>
+									<div class="navbar-inner my-popup-handler">
+										<div class="title homebar-dark blur navbar-transparent"></div>
+										<div class="right">
+										</div>
+									</div>
+								</div>
+								<div class="page-content">
+									<div class="list simple-list inset">
+										<ul>
+											<li>
+												<span><i class="icon f7-icons">moon_fill</i> Dark Mode</span>
+												<label class="toggle">
+													<input type="checkbox" id="darkmode-switch">
+													<span class="toggle-icon"></span>
+												</label>
+											</li>
+										</ul>
+									</div>
+
+									<h1 style="font-size:20px;margin:20px;">Our Team</h1>
+
+									<div class="list media-list inset">
+										<ul>
+											<li>
+												<a onclick="location='https://sizu.gq/'" class="item-link item-content">
+													<div style="margin-top: 5px;" class="item-media"><img style="border-radius:30%;background-color:#f2f2f2;height:50px;" src="http://twivatar.glitch.me/s1z4r" width="50" /></div>
+													<div style="margin-top: 5px;" class="item-inner">
+														<div class="item-title">
+															<div class="item-header">Name</div>
+															| Sizar
+														</div>
+														<div class="item-after">Operation Karez Owner</div>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a onclick="location='tel:+964-772-798-4430'" class="item-link item-content">
+													<div style="margin-top: 5px;" class="item-media"><div class="phone-app" style="border-radius: 30%; width: 50px; height: 50px; background-color: #45E942;"><i style=" margin-top: 12px; width: 50px;" class="icon f7-icons color-white">phone_fill</i></div></div>
+													<div class="item-inner">
+														<div class="item-title">
+															<div class="item-header">Phone</div>
+															| +964 772 798 4430
+														</div>
+														<div class="item-after">Call me!</div>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a onclick="location='mailto:sizarazad86@gmail.com'" class="item-link item-content">
+													<div style="margin-top: 5px;" class="item-media"><div class="mail-app" style="border-radius: 30%; width: 50px; height: 50px; background-color: #1D8EF5;"><i style=" margin-top: 12px; width: 50px;" class="icon f7-icons color-white">envelope_fill</i></div></div>
+													<div class="item-inner">
+														<div class="item-title">
+															<div class="item-header">Email</div>
+															| sizarazad86@gmail.com
+														</div>
+														<div class="item-after">Email Me!</div>
+													</div>
+												</a>
+											</li>
+										</ul>
+									</div>
+
+									<h1 style="font-size:20px;margin:20px;">Youtubers</h1>
+
+									<div style="margin-top:0px;" class="list media-list inset">
+										<ul>
+											<li>
+												<a onclick="location='https://www.youtube.com/watch?v=CPQZVTmVR6M&t=8s'" class="item-link item-content">
+													<div class="item-media"><img style="border-radius:50%;background-color:#f2f2f2;height:30px;" src="https://yt3.ggpht.com/a/AATXAJwDQxREwBFC3fOxcvEi8xj7DWF2_C9dbdiPIA=s100-c-k-c0xffffffff-no-rj-mo" width="30" /></div>
+													<div class="item-inner">
+														<div class="item-title-row">
+															<div class="item-title">TheTechSpot</div>
+														</div>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a onclick="location='https://www.youtube.com/watch?v=BecZsO-ajaU&t=15s'" class="item-link item-content">
+													<div class="item-media"><img style="border-radius:50%;background-color:#f2f2f2;height:30px;" src="https://yt3.ggpht.com/a/AATXAJyMil_oI_LW15j237ntpj3Oek7ZsDnS-S64GA=s100-c-k-c0xffffffff-no-rj-mo" width="30" /></div>
+													<div class="item-inner">
+														<div class="item-title-row">
+															<div class="item-title">Saunders Tech</div>
+														</div>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a onclick="location='https://www.youtube.com/watch?v=7r4moYYS1JU&t=586s'" class="item-link item-content">
+													<div class="item-media"><img style="border-radius:50%;background-color:#f2f2f2;height:30px;" src="https://yt3.ggpht.com/a/AATXAJwHhDLHcrpzpxU7q4Cz0V5atrfNcZvnIdQPJQ=s100-c-k-c0xffffffff-no-rj-mo" width="30" /></div>
+													<div class="item-inner">
+														<div class="item-title-row">
+															<div class="item-title">Jork The Pork</div>
+														</div>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a onclick="location='https://www.youtube.com/watch?v=DHAi1u0ZgQU'" class="item-link item-content">
+													<div class="item-media"><img style="border-radius:50%;background-color:#f2f2f2;height:30px;" src="https://yt3.ggpht.com/a/AATXAJzqoj_4QibjCAYnPeveIGnXu0X4UM1fajVa1A=s100-c-k-c0xffffffff-no-rj-mo" width="30" /></div>
+													<div class="item-inner">
+														<div class="item-title-row">
+															<div class="item-title">king painkiller</div>
+														</div>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a onclick="location='https://www.youtube.com/watch?v=u_wInncIa74&t=7s'" class="item-link item-content">
+													<div class="item-media"><img style="border-radius:50%;background-color:#f2f2f2;height:30px;" src="https://yt3.ggpht.com/a/AATXAJw4P08osk8sRMCj5IWtwnsjRm4iNBdA0kY3DQ=s100-c-k-c0xffffffff-no-rj-mo" width="30" /></div>
+													<div class="item-inner">
+														<div class="item-title-row">
+															<div class="item-title">Angry Watermellon</div>
+														</div>
+													</div>
+												</a>
+											</li>
+										</ul>
+									</div>
+
+
+
+								</div>
+							</div>
+						</div>
+					</div> 
 					<div class="page-content hide-toolbar-on-scroll tab tab-active" id="home-tab">
 						<div class="card card-expandable" style="height: 120px;">
 							<div class="card-content">
@@ -159,7 +283,7 @@
 						<div data-slides-per-view="auto" class="swiper-container swiper-init">
 							<div class="swiper-wrapper">
 								<a class="swiper-slide app-icon first-app link install-addme">
-									<img class="app-icon" src="https://is5-ssl.mzstatic.com/image/thumb/Purple113/v4/57/83/e1/5783e156-c657-f7f1-396f-105683b26644/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/246x0w.png">
+									<img class="app-icon phone" src="https://is5-ssl.mzstatic.com/image/thumb/Purple113/v4/57/83/e1/5783e156-c657-f7f1-396f-105683b26644/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/246x0w.png">
 									<p class="app-name">AddMe</p>
 								</a>
 								<a class="swiper-slide app-icon first-app link install-facetune">
@@ -2155,21 +2279,53 @@
 				// set default title for all dialog shortcuts
 				// title: 'My App',
 				// change default "OK" button text
-				buttonOk: '<i class="icon f7-icons">logo_twitter</i>',
-				buttonCancel: '<i class="icon f7-icons">cube_box</i>',
+			},
+			popup: {
+				swipeToClose: true,
+				swipeHandler: '.my-popup-handler',
 			}
 		});
-		var $$ = Dom7;
-		$(document).ready(function() {
-			app.dialog.confirm('The App is Under Maintenance And Doesn\'t Work Yet.<br><br>You Can Follow me on Twiiter For Updates.<br><br>Or Add My Repository to Cydia.', 'Attention!', function() {
-				window.location = "twitter://user?screen_name=s1z4r"
-			}, function() {
-				window.location = "cydia://url/https://cydia.saurik.com/api/share#?source=https://repo.sizu.gq/"
-			});
-			// or you can auto dismiss the Dialog
-			// setTimeout(function() {
-			// 	app.dialog.close();
-			// }, 3000);
+
+		var dialog = app.dialog.create({
+			title: 'Attention!',
+			text: 'The App is Under Maintenance And Doesn\'t Work Yet.<br>What Do You Wanna Do?',
+			buttons: [
+				{
+					text: '<a class="link external" href="twitter://user?screen_name=s1z4r">Follow me on Twitter</a>',
+				},
+				{
+					text: '<a class="link external" href="cydia://url/https://cydia.saurik.com/api/share#?source=https://repo.sizu.gq/">Add My Repository To Cydia</a>',
+				},
+			],
+			verticalButtons: true,
+		}).open();
+		
+//		('The App is Under Maintenance And Doesn\'t Work Yet.<br><br>You Can Follow me on Twiiter For Updates.<br><br>Or Add My Repository to Cydia.', 'Attention!', function () {
+//			window.location = "twitter://user?screen_name=s1z4r"
+//		}, function () {
+//			window.location = "cydia://url/https://cydia.saurik.com/api/share#?source=https://repo.sizu.gq/"
+//		})
+//		buttonOk: '<i class="icon f7-icons">logo_twitter</i>',
+//		buttonCancel: '<i class="icon f7-icons">cube_box</i>',
+		
+		// or you can auto dismiss the Dialog
+		// setTimeout(function() {
+		// 	app.dialog.close();
+		// }, 3000);
+
+		// With callback on close
+		var notificationCallbackOnClose = app.notification.create({
+			icon: '<i class="icon demo-icon">7</i>',
+			title: 'Framework7',
+			titleRightText: 'now',
+			subtitle: 'Notification with close on click',
+			text: 'Click me to close',
+			closeOnClick: true,
+			on: {
+				close: function() {
+					app.dialog.alert('Notification closed');
+				},
+			},
 		});
 	</script>
 	<!-- <script>
@@ -2195,7 +2351,39 @@
 			document.getElementById("demo").innerHTML = txt;
 		}
 	</script> -->
+	<script>
+		document.getElementById("darkmode-switch").addEventListener("click", toggleDark);
 
+		function toggleDark() {
+			if ($("#app").hasClass("theme-dark")) {
+				$("#app").removeClass("theme-dark");
+				$('#page-color').attr('style', '');
+				$("#popup-color").attr('style', '');
+				$(".app-name").attr('style', 'color:black;');
+				$(".title").removeClass("homebar-light");
+				$(".title").addClass("homebar-dark");
+				$(".popup-bg-color").attr('style', 'background-color:white;');
+				$(".swiper-container").attr('style', 'border-bottom: 1px solid #d9d9d9;');
+				localStorage.setItem("darkmode", "false");
+			} else {
+				$("#app").addClass("theme-dark");
+				$('#page-color').attr('style', 'background-color:black;');
+				$("#popup-color").attr('style', 'background-color:black;');
+				$(".title").removeClass("homebar-dark");
+				$(".title").addClass("homebar-light");
+				$(".app-name").attr('style', 'color:white;');
+				$(".swiper-container").attr('style', 'border-bottom: 1px solid #272727;');
+				$(".popup-bg-color").attr('style', 'background-color:black;');
+				localStorage.setItem("darkmode", "true");
+			}
+		}
+
+		$(document).ready(function() {
+			if (localStorage.getItem("darkmode") == "true") {
+				$("#darkmode-switch").click();
+			}
+		});
+	</script>
 </body>
 
 </html>

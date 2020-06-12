@@ -1,10 +1,6 @@
 .swiper-container {
-	padding-top: 10px;
-	border-bottom: 1px solid #222;
-}
-
-.swiper-container-dark {
-	background-color: #222;
+	padding-top: 12px;
+	padding-bottom: 12px;
 }
 
 .swiper-wrapper {
@@ -15,7 +11,8 @@
 	background-color: #aaa;
 	width: 90px;
 	height: 90px;
-	border-radius: 25%;
+	border-radius: 28%;
+	box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
 }
 
 .tweak-icon {
@@ -26,7 +23,6 @@
 }
 
 .tweak-name {
-	color: #fff;
 	margin: 95px auto auto -85px;
 }
 
@@ -35,7 +31,7 @@
 }
 
 .app-name {
-	color: #fff;
+	color: #000;
 	margin: 95px auto auto -85px;
 }
 
@@ -107,13 +103,40 @@
 	width: 75%;
 }
 
-.lol {
+.homebar-light {
+	background-color: white;
+	height: 4px;
+	width: 50px;
+	border-radius: 20px;
+}
+
+.homebar-dark {
+	background-color: black;
+	height: 4px;
+	width: 50px;
+	border-radius: 20px;
+}
+
+.mail-app {
+	background: rgb(28,110,241);
+	background: linear-gradient(180deg, rgba(28,110,241,1) 0%, rgba(48,203,252,1) 100%);
+}
+
+.phone-app {
+	background: rgb(141,254,119);
+	background: linear-gradient(180deg, rgba(141,254,119,1) 0%, rgba(19,211,68,1) 100%);
+}
+
+.gradient {
 	text-transform: uppercase;
 	background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+
 	font: {
 		size: 20vw;
 		family: $font;
-	};
+	}
+
+	;
 }
