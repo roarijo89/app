@@ -109,15 +109,12 @@
 					</div>
 				</div>
 				<div class="tabs">
-					 <div style="border-top-left-radius: 20px; border-top-right-radius: 20px; margin-top:20px;" class="popup my-popup">
+					 <div style="border-top-left-radius: 20px; border-top-right-radius: 20px; margin-top:70px;padding-bottom: 70px;" class="popup my-popup">
 						<div class="view" id="popup-color">
-							<div class="page">
 								<div class="navbar">
 									<div class="navbar-bg"></div>
 									<div class="navbar-inner my-popup-handler">
-										<div class="title homebar-dark blur navbar-transparent"></div>
-										<div class="right">
-										</div>
+										<div class="title title-settings homebar-dark"></div>
 									</div>
 								</div>
 								<div class="page-content">
@@ -236,7 +233,6 @@
 
 
 								</div>
-							</div>
 						</div>
 					</div> 
 					<div class="page-content hide-toolbar-on-scroll tab tab-active" id="home-tab">
@@ -2360,8 +2356,8 @@
 				$('#page-color').attr('style', '');
 				$("#popup-color").attr('style', '');
 				$(".app-name").attr('style', 'color:black;');
-				$(".title").removeClass("homebar-light");
-				$(".title").addClass("homebar-dark");
+				$(".title-settings").removeClass("homebar-light");
+				$(".title-settings").addClass("homebar-dark");
 				$(".popup-bg-color").attr('style', 'background-color:white;');
 				$(".swiper-container").attr('style', 'border-bottom: 1px solid #d9d9d9;');
 				localStorage.setItem("darkmode", "false");
@@ -2369,8 +2365,8 @@
 				$("#app").addClass("theme-dark");
 				$('#page-color').attr('style', 'background-color:black;');
 				$("#popup-color").attr('style', 'background-color:black;');
-				$(".title").removeClass("homebar-dark");
-				$(".title").addClass("homebar-light");
+				$(".title-settings").removeClass("homebar-dark");
+				$(".title-settings").addClass("homebar-light");
 				$(".app-name").attr('style', 'color:white;');
 				$(".swiper-container").attr('style', 'border-bottom: 1px solid #272727;');
 				$(".popup-bg-color").attr('style', 'background-color:black;');
