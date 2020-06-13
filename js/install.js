@@ -22,19 +22,13 @@ $$('.install-app').on('click', function (appName, bundle, version, size) {
 });
 
 $$('.install-addme').on('click', function() {
-	app.dialog.create({
-		title: 'Attention!',
-		text: 'The App is Under Maintenance And Doesn\'t Work Yet.<br>What Do You Wanna Do?',
-		buttons: [
-			{
-				text: '<a class="link external" href="twitter://user?screen_name=s1z4r">Follow me on Twitter</a>',
-			},
-			{
-				text: '<a class="link external" href="cydia://url/https://cydia.saurik.com/api/share#?source=https://repo.sizu.gq/">Add My Repository To Cydia</a>',
-			},
-		],
-		verticalButtons: true,
-		}).open();
+	app.dialog.confirm('App Name: ' + 'AddMe' + '<br>Bundle Identifier: ' + 'com.PrestigeNetEnterprises.AddMe' + '<br>Version: ' + '1.4' + '<br>Size: ' + '26.8 MB', 'Information', function () {
+		app.dialog.preloader('Installing...', 'white');
+		window.location = "itms-services://?action=download-manifest&url=Link";
+		setTimeout(function () {
+			app.dialog.close();
+		}, 1500);
+	});
 });
 
 $$('.install-8ballpool').on('click', function() {
