@@ -21,6 +21,16 @@ $$('.install-app').on('click', function (appName, bundle, version, size) {
 	});
 });
 
+$$('.install-spectre').on('click', function (appName, bundle, version, size) {
+	app.dialog.confirm('App Name: ' + 'Spectre' + '<br>Bundle Identifier: ' + 'Bundle Here' + '<br>Version: ' + '1.1.4' + '<br>Size: ' + '7.72 MB', 'Information', function () {
+		app.dialog.preloader('Installing...', 'white');
+		window.location = "itms-services://?action=download-manifest&url=https://app.sizu.gq/plists/spectre.plist";
+		setTimeout(function () {
+			app.dialog.close();
+		}, 1500);
+	});
+});
+
 $$('.install-addme').on('click', function() {
 	app.dialog.confirm('App Name: ' + 'AddMe' + '<br>Bundle Identifier: ' + 'com.PrestigeNetEnterprises.AddMe' + '<br>Version: ' + '1.4' + '<br>Size: ' + '26.8 MB', 'Information', function () {
 		app.dialog.preloader('Installing...', 'white');
