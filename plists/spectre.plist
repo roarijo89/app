@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>assets</key>
+			<array>
+				<dict>
+					<key>kind</key>
+					<string>software-package</string>
+					<key>url</key>
+					<string>https://signed-usa.tutuapp.net/8226278194318268471/3628339-1592151060897-99.ipa</string>
+				</dict>
+				<dict>
+					<key>kind</key>
+					<string>display-image</string>
+					<key>needs-shine</key>
+					<true/>
+					<key>url</key>
+					<string>https://photos.tutuapp.com/picture/app_ios/cn/003/62/83/39/3628339.175x175-75.jpg</string>
+				</dict>
+				<dict>
+					<key>kind</key>
+					<string>full-size-image</string>
+					<key>needs-shine</key>
+					<true/>
+					<key>url</key>
+					<string>https://photos.tutuapp.com/picture/app_ios/cn/003/62/83/39/3628339.175x175-75.jpg</string>
+				</dict>
+			</array>
+			<key>metadata</key>
+			<dict>
+				<key>bundle-identifier</key>
+				<string>gq.sizu.spectre</string>
+				<key>bundle-version</key>
+				<string>1.1.4</string>
+				<key>kind</key>
+				<string>software</string>
+				<key>title</key>
+				<string>Spectre v1.1.4 By Sizar</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
